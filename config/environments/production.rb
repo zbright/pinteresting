@@ -77,4 +77,8 @@ Pinteresting::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+
+  # For mailing from devise from heroku -> Need to set to actual host name
+  config.action_mailer.default_url_options = { host: 'zach-pinteresting.herokuapp.com' }
 end
